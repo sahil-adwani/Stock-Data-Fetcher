@@ -1,0 +1,139 @@
+body, h1, h2, p, form, input, label, button, table, td {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Dark theme background and text colors */
+  body {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+  
+  /* Container styling */
+  .container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  /* Heading styling */
+  .heading {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #bb86fc;
+  }
+  
+  /* Error message styling */
+  .error-message {
+    color: #cf6679;
+    background-color: #3e1e1e;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  
+  /* Form styling */
+  form {
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #e0e0e0;
+  }
+  
+  input[type="text"], input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background-color: #2c2c2c;
+    color: #e0e0e0;
+  }
+  
+  input[type = "date"]{
+    color-scheme: dark;
+  }
+  
+  input[type="text"]:focus, input[type="date"]:focus {
+    border-color: #bb86fc;
+    outline: none;
+  }
+  
+  /* Button styling */
+  button {
+    padding: 10px 20px;
+    background-color: #bb86fc;
+    color: #121212;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[disabled] {
+    background-color: #757575;
+    cursor: not-allowed;
+  }
+  
+  button:hover:not([disabled]) {
+    background-color: #5214e4;
+    color: white;
+  }
+  
+  /* Result container styling */
+  .result-container {
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  .result-container h2 {
+    margin-bottom: 10px;
+    color: #bb86fc;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  td {
+    padding: 10px;
+    border: 1px solid #333;
+  }
+  
+  td.positive {
+    color: #03dac5;
+  }
+  
+  td.negative {
+    color: #cf6679;
+  }
+  
+  @media (max-width: 600px) {
+    .container {
+      padding: 15px;
+    }
+  
+    .heading {
+      font-size: 1.8em;
+    }
+  
+    button {
+      width: 100%;
+    }
+  }
+  
+  
